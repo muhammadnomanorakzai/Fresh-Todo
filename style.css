@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+  background: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* Todo App Box */
+.todo-app {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.todo-app h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+}
+
+/* Input Area */
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #B4ADEA;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-area button {
+  background: #B4ADEA;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #fff;
+  font-size: 18px;
+}
+
+.input-area button:hover {
+  background: #8c7ace;
+}
+
+/* Task List */
+.todos-container ul {
+  list-style: none;
+}
+
+.todos-container ul li {
+  background: #f5f5f5;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.todos-container ul li:hover {
+  background: #e3e3e3;
+}
+
+.todos-container ul li.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
+
+/* Task Buttons */
+.todos-container ul li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 8px;
+  color: #B4ADEA;
+  transition: 0.3s;
+}
+
+.todos-container ul li button:hover {
+  color: #8c7ace;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
